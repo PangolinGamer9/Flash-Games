@@ -27,16 +27,17 @@
     const gamesList = document.getElementById("select-game);
                                               
     gamesList.addEventListener("click", function(){
+        alert('works');
         window.RufflePlayer = window.RufflePlayer || {};
-    //window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("container");
-        container.appendChild(player);
-        player.style.width = "99vw"; 
-        player.style.height = "99vh";
-        player.load("games/Duck Life 1.swf");
-    //});
+        window.addEventListener("load", (event) => {
+            const ruffle = window.RufflePlayer.newest();
+            const player = ruffle.createPlayer();
+            const container = document.getElementById("container");
+            container.appendChild(player);
+            player.style.width = "99vw"; 
+            player.style.height = "99vh";
+            player.load("games/Duck Life 1.swf");
+        });
     });
     
 </script>
