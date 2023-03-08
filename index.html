@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Basic Web Page</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
   <!--<select id="select-game" onchange="playGame()">
       
   </select>-->
 
-      <style>
+<!DOCTYPE html>
+<html>
+<head>
+<title>TGS- Duck Life 1</title>
+    <style>
         body{
             background-color: #424a44;
         }
@@ -22,15 +18,25 @@
         }
 
     </style>
+</head>
 
+<body>
     
-  <div id="container"></div>
-  <script>
-      
-  </script>
-  <script src="ruffle/ruffle.js"></script>
+<div id="container"></div>
+<script>
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.addEventListener("load", (event) => {
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+        const container = document.getElementById("container");
+        container.appendChild(player);
+        player.style.width = "99vw"; 
+        player.style.height = "99vh";
+        player.load("games/Duck Life 1.swf");
+    });
+</script>
+<script src="ruffle/ruffle.js"></script>
 
-
-  <script src="script.js"></script>
 </body>
+
 </html>
