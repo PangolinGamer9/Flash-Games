@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Totally Google- Flash</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <title>Basic Web Page</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
-    <script src="sidebar.js"></script>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="https://tgs-tgm.github.io/index.html">Main Page</a>
-      <a href="https://tgs-tgm.github.io/info.html">Info</a>
-        <a href="https://tgs-tgm.github.io/zabala/">Sub 2 Zabala</a>
-      <a href="https://tgs-tgm.github.io/flash/">Flash Games</a>
-    </div>
+  <select id="select-game" onchange="playGame()">
+      
+  </select>
 
-    <!-- Use any element to open the sidenav -->
-     <img class="side" alt="Sidebar" src="sidebar.png" onclick="openNav()">
+      <style>
+        body{
+            background-color: #424a44;
+        }
+        #container{
+                position: relative;
+                width: fit-content;
+                left: 50%;
+                transform: translateX(-50%);        
+        }
 
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-      <div id="main">
-    </div>
-    <h1 class="title">Flash Games</h1>
-    <div id="button_holder">
-        <button class="button" onclick="window.location.href='au.html';">Achievement Unlocked</button>
-        <button class="button" onclick="window.location.href='ducklife1.html';">Duck Life 1</button>
-        <button class="button" onclick="window.location.href='ducklife2.html';">Duck Life 2</button>
-        <button class="button" onclick="window.location.href='ducklife3.html';">Duck Life 3</button>
-        <button class="button" onclick="window.location.href='ducklife4.html';">Duck Life 4</button>
-        <button class="button" onclick="window.location.href='ageofwar.html';">Age of War</button>
-        <button class="button" onclick="window.location.href='bloons2.html';">Bloons TD 2</button>
-        <button class="button" onclick="window.location.href='learntofly.html';">Learn To Fly</button>
-        <button class="button" onclick="window.location.href='qwop.html';">QWOP</button>
-        <button class="button" onclick="window.location.href='quiz.html';">The Impossible Quiz</button>
-        <button class="button" onclick="window.location.href='whg.html';">World's Hardest Game</button>
-    </div>
-        <p class="footer">Site made by TGS, do not sell, this is free. I am not the original creator of these games nor do I affiliate with them. Check info page for more info.</p>
+    </style>
+
+    
+  <div id="container"></div>
+  <script>
+      
+  </script>
+  <script src="ruffle/ruffle.js"></script>
+
+
+  <script src="script.js"></script>
 </body>
-
 </html>
