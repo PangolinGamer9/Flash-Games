@@ -23,7 +23,7 @@ function playGame(){
   });
 }
 
-/*
+
 
 window.RufflePlayer = window.RufflePlayer || {};
       window.addEventListener("load", (event) => {
@@ -35,4 +35,3 @@ window.RufflePlayer = window.RufflePlayer || {};
           player.style.height = "99vh";
           player.load("games/Duck Life 1.swf");
       });
-*/
