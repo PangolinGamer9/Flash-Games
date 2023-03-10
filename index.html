@@ -19,14 +19,14 @@
 </head>
 
 <body>
-  <select id="select-game" onchange="playGame()">
+  <select id="select-game">
         
   </select>
 <div id="container"></div>
 <script>
     const gamesList = document.getElementById("select-game);
                                               
-    gamesList.addEventListener("click", function(){
+    gamesList.addEventListener("change", function(){
         alert('works');
         window.RufflePlayer = window.RufflePlayer || {};
         window.addEventListener("load", (event) => {
